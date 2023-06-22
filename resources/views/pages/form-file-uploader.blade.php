@@ -68,9 +68,11 @@
           <h4 class="card-title">Multiple Files Upload</h4>
         </div>
         <div class="card-body">
-          <p class="card-text">This example uploads a multiple files using dropzone js library. By default, dropzone
+          <p class="card-text">
+            This example uploads a multiple files using dropzone js library. By default, dropzone
             is a multiple file uploader. User can either click on the dropzone area and select multiple files or just
-            drop all selected files in the dropzone area. This example is the most basic setup for dropzone.</p>
+            drop all selected files in the dropzone area. This example is the most basic setup for dropzone.
+          </p>
           <form action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
             <div class="dz-message">Drop Files Here To Upload</div>
           </form>

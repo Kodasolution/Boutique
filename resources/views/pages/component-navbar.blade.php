@@ -223,7 +223,7 @@
                             <span> Chats</span>
                           </a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="javascript:void(0);">
+                          <a class="dropdown-item" href="{{ route('admin.logout') }}">
                             <i class="bx bx-power-off mr-50"></i>
                             <span> Logout</span>
                           </a>

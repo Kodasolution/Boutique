@@ -63,14 +63,14 @@ data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" data-fra
   <!-- End: Customizer-->
 
   <!-- Buynow Button-->
-  <div class="buy-now">
+  {{-- <div class="buy-now">
     @include('pages.buy-now')
-  </div>
+  </div> --}}
   @endif
   <!-- demo chat-->
-  <div class="widget-chat-demo">
+  {{-- <div class="widget-chat-demo">
     @include('pages.widget-chat')
-  </div>
+  </div> --}}
 
   <div class="sidenav-overlay"></div>
   <div class="drag-target"></div>

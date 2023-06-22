@@ -133,7 +133,12 @@ return [
   "Floating navbar" => "Floating navbar",
   "Error" => "Error",
   "Access Control" => "Access Control",
-  "Ratings"=>"Ratings",
+  "Ratings" => "Ratings",
+  "Category" => "Category",
+  "Products List" => "Products List",
+  "Color" => "Color",
+  "Products" => "Products",
+  "Other Field" => "Other Field",
+  "Size" => "Size",
   "message" => "Cake sesame snaps cupcake gingerbread danish I love gingerbread. Apple pie pie jujubes chupa chups muffin halvah lollipop. Chocolate cake oat cake tiramisu marzipan sugar plum. Donut sweet pie oat cake dragée fruitcake cotton candy lemon drops."
 ];
-?>
