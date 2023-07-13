@@ -233,16 +233,24 @@ class ProductController extends Controller
             }
             if ($request['principal']) {
                 $oldPrincipale = Photo::where('product_id', $product->id)->where('principal', 1)->first();
-                $oldPrincipale->update(
-                    [
-                        'principal' => 0
-                    ]
-                );
-                $newPrincipale = Photo::where('product_id', $product->id)->where('id', $request->principal)->first();
-                $newPrincipale->update(['principal' => 1]);
+                if ($oldPrincipale == null) {
+                    $photo = Photo::where('product_id', $product->id)->where('id', $request['principal'])->first();
+                    $photo->update(
+                        [
+                            'principal' => 1
+                        ]
+                    );
+                } else {
+                    $oldPrincipale->update(
+                        [
+                            'principal' => 0
+                        ]
+                    );
+                    $newPrincipale = Photo::where('product_id', $product->id)->where('id', $request->principal)->first();
+                    $newPrincipale->update(['principal' => 1]);
+                }
             }
             if ($request['files']) {
-                // dd($request->files);
                 foreach ($request['files'] as $key => $item) {
                     $fileName = $product->id . '_' . $item->getClientOriginalName();
                     $type = $item->getClientMimeType();

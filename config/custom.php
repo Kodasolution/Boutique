@@ -2,7 +2,7 @@
 // custom.php file return default configuration setting of layouts
 return [
   'custom' => [
-    'mainLayoutType' => 'vertical-menu', //Options:vertical-menu,horizontal-menu,vertical-menu-boxicons, default(vertical-menu)
+    'mainLayoutType' => 'vertical-menu-boxicons', //Options:vertical-menu,horizontal-menu,vertical-menu-boxicons, default(vertical-menu)
     'theme' => 'light',  //light(default),dark,semi-dark (note: Horizontal-menu not applicable for semi-dark)
     'isContentSidebar' => false,  // Options: True and false(default) (There are two page layout with content-sidebar and without sidebar)
     'pageHeader' => false, //options:Boolean: false(default), true (Page Header for Breadcrumbs) Warning:if page header true need to define a breadcrumbs in controller
